@@ -1,0 +1,171 @@
+.hero-section{
+  padding-left: 5.5rem;
+  padding-bottom: 4rem;
+}
+
+.hero-section h1 {
+  color: #efc92d;
+  font-size: 1.6rem;
+  text-align: left;
+  margin: 3rem 0 0.5rem 0;
+}
+
+.hero-section h2{
+  color: #0e5943;
+  font-size: 1.3rem;
+  text-align: left;
+  margin: 2rem 0 0.5rem 1rem;
+}
+.section-subtitle{
+  text-align: left;
+  margin: 0 0 0.5rem 1rem;
+}
+
+.dot-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  margin: 0 0 1.5rem 0; 
+}
+
+.dot-line span {
+  width: 40px;
+  height: 2px;
+  background: #e5e5e5;
+}
+
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background: #ff5a3c;
+  border-radius: 50%;
+}
+
+.project {
+  max-width: 720px;
+  background: #ffffff;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.2rem 0 1.2rem 2rem; 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease; 
+}
+
+.project:hover {
+  transform: translateY(-2px); 
+}
+
+.project h3{
+  font-size: 1.15rem;
+  margin: 0 0 0.3rem 0;
+}
+
+.project p{
+  margin: 0 0 0.3rem 0;
+  color: #3c3c3c;
+  line-height: 1.6;
+}
+
+.project details summary{
+  cursor: pointer;
+  font-weight: 600;
+  color: #0e5943;
+  list-style: none;
+}
+
+.project details summary::-webkit-details-marker{
+  display: none;
+}
+
+.project details summary::before{
+  content: "▸";
+  display: inline-block;
+  margin-right: 0.5rem;
+  transform: translateY(-1px);
+}
+
+.project details[open] summary::before{
+  content: "▾";
+}
+
+.project__image{
+  margin: 1.5rem auto 0 auto;
+}
+
+.project__image img{
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+.project__image--small{
+  max-width: 320px;
+}
+
+.project__image--medium{
+  max-width: 480px;
+}
+
+.project__image--large{
+  max-width: 640px;
+}
+
+
+@media screen and (max-width: 968px) {
+  .hero-section{
+    padding: 2rem 1.4rem;
+  }
+
+  .hero-section h1{
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .dot-line{
+    margin-bottom: 1.6rem;
+    justify-content: center;
+  }
+
+  .hero-section h2{
+    font-size: 1.15rem;
+    text-align: center;
+    margin: 2rem 0 0.5rem 0;
+  }
+
+  .section-subtitle{
+    font-size: 0.95rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+
+  .project{
+    padding: 1.2rem 1.3rem;
+    border-radius: 14px;
+    margin-bottom: 1.1rem;
+  }
+
+  .project h3{
+    font-size: 1.05rem;
+  }
+
+  .project p{
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .project details summary{
+    font-size: 0.95rem;
+  }
+
+  .section-divider{
+    margin: 3rem 0 2.5rem 0;
+  }
+
+}
+
+

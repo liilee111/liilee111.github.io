@@ -1,0 +1,61 @@
+.hero{
+  margin-left: 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+}
+.hero h1 {
+  color: #efc92d;
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 3rem 0 0.5rem 0;
+}
+
+.dot-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin: 0 0 1.5rem 0; 
+}
+
+.dot-line span {
+  width: 40px;
+  height: 2px;
+  background: #e5e5e5;
+}
+
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background: #ff5a3c;
+  border-radius: 50%;
+}
+
+.hero__content p{
+  line-height: 1.6;
+  padding: 1rem 0 0 0;
+  text-align: left;
+}
+
+@media screen and (max-width: 968px) {
+  .hero{
+    padding: 0 1.4rem;
+  }
+
+  .hero h1{
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+
+  .hero__content p{
+    padding: 0.9rem;
+  }
+  .dot-line{
+    margin-bottom: 1.6rem;
+    justify-content: center;
+  }
+
+}

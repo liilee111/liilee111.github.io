@@ -1,0 +1,147 @@
+body {
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+.navbar__container{
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0 50px;
+  background: white;
+  z-index: 1000;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 0.01em;
+  color: #ff5a3c;
+}
+
+.logo-text {
+  font-weight: 600;
+}
+
+.logo-heart {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+
+.navbar__menu{
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar__links{
+    color: #000;
+    text-decoration: none;
+    padding: 0 1rem; 
+    display: flex; 
+    justify-content: flex-start;  
+
+    font-size: 1.1rem; 
+    font-weight: 500;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+
+.navbar__links:hover{
+    color: #efc92d; 
+    opacity: 0.75;
+}
+
+.navbar__toggle {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 968px) {
+
+  /* NAVBAR */
+  .navbar__container {
+    justify-content: flex-start;
+    position: relative;          
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 18px;
+  }
+
+  /* LOGO: visually centered in the navbar */
+  .navbar__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+
+  /* Hamburger button: fixed on the left */
+  .navbar__toggle {
+    display: block;
+    position: relative;        
+    z-index: 1001;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    font-size: 2.2rem;
+  }
+
+  /* Dropdown menu (slides DOWN) */
+  .navbar__menu {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 90px;
+    left: 0;                  
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+
+    background: white;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+    z-index: 1000;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .navbar__menu.active {
+    max-height: 320px;
+    opacity: 1;
+  }
+
+  .navbar__item {
+    width: 100%;
+    display: flex;
+    margin-left: 70px;
+    justify-content: flex-start;
+  }
+
+  .navbar__links {
+    padding: 10px 12px;        
+    font-size: 1rem;
+  }
+}
+

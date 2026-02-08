@@ -1,0 +1,90 @@
+.hero h1 {
+  color: #efc92d;
+  font-size: 1.6rem;
+  text-align: left;
+  margin: 3rem 0 0.5rem 0;
+}
+
+.hero{
+  padding-left: 5.5rem;
+}
+
+.timeline{
+  border-left: 2px solid #e5e5e5; 
+  padding-left: 1.5rem;
+  margin-left: 0.5rem;
+}
+
+.timeline-item{
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-header{
+  display: grid;
+  grid-template-columns: max-content max-content; 
+  column-gap: 2rem;                           
+  align-items: baseline;
+}
+
+.timeline-title {
+  font-weight: 700;
+  color: #000;
+}
+
+
+.timeline-date {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: right;       
+  margin-left: auto;       
+  white-space: nowrap;
+}
+
+.timeline-content {
+  line-height: 1.6;
+  padding-top: 0.5rem;
+}
+
+.dot-line {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.4rem;
+  margin: 0 0 1.5rem 0; 
+}
+
+
+.dot-line span {
+  width: 40px;
+  height: 2px;
+  background: #e5e5e5;
+}
+
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background: #ff5a3c;
+  border-radius: 50%;
+}
+
+
+@media screen and (max-width: 968px) {
+
+  .hero{
+    padding: 2rem 3rem;
+  }
+
+  .hero h1{
+      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      text-align: center;
+  }
+
+  .dot-line{
+      margin-bottom: 1.6rem;
+      justify-content: center;
+  }
+
+}
